@@ -1,0 +1,17 @@
+.list-group {
+    background-color: #00bc8c;
+    border: 2px solid #00bc8c;
+}
+.list-group-item {
+    cursor: pointer;
+    border-color: #00bc8c;
+}
+.list-group-item a {
+    text-decoration: none;
+}
+.list-group-item:hover {
+    background-color: #00bc8c;
+}
+.list-group-item:hover span {
+    color: white;
+}

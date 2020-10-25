@@ -1,0 +1,12 @@
+.page-item {
+    cursor: pointer;
+}
+.page-item .page-link{
+    border-color: #00bc8c;
+}
+.page-item.disabled .page-link{
+    border-color: #00bc8c;
+}
+.page-link:hover {
+    background-color: #00bc8c;
+}
