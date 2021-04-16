@@ -6,26 +6,38 @@ import './add-user.css';
 
 const AddUser = () => {
 
-    const [ sending, setSending] = useState(false);
+    const [sending, setSending] = useState(false);
 
     const { values, updateValue } = useForm({
         name: '',
         surname: '',
-        desc:'',
+        desc: '',
         // email:'',
         // phone:''
     });
 
+    // const handleSubmit = event => {
+    //     event.preventDefault();
+    //     axios.post('http://77.120.241.80:8911/api/users', {
+    //         name: values.name,
+    //         surname: values.surname,
+    //         desc: values.desc
+    //     })
+    //     .catch((error) => {
+    //             console.log(error);
+    //     });
+    //     setSending(true);
+    // }
     const handleSubmit = event => {
         event.preventDefault();
-        axios.post('http://77.120.241.80:8911/api/users', {
+        axios.post('https://api.sampleapis.com/futurama/characters', {
             name: values.name,
             surname: values.surname,
             desc: values.desc
         })
-        .catch((error) => {
+            .catch((error) => {
                 console.log(error);
-        });
+            });
         setSending(true);
     }
 
